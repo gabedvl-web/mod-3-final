@@ -1,0 +1,76 @@
+/* 
+
+NAV
+
+*/
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.TR {
+  flex: 1;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav__img {
+  width: 40px;
+  padding: 0 50px 0 50px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+.purple {
+  color: rgb(85, 5, 190)
+}
+
+.nav__button {
+  background-color: rgb(85, 5, 190);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px;
+}
+/*
+
+LANDING
+
+*/
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+}
+
+.landing__img {
+  width: 60%;
+}
+
+.row {
+  display: flex;
+}
