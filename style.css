@@ -55,7 +55,9 @@ LANDING
 
 */
 
-
+header {
+  display: flex;
+}
 .header__content {
   display: flex;
   align-items: center;
@@ -68,6 +70,6 @@ LANDING
 }
 
 .section__img__right {
-  display: flex;
   width: 60%;
+  margin: 0;
 }
