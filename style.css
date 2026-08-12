@@ -69,7 +69,6 @@ header {
   width: 60%;
 }
 
-.section__img__right {
+.header__img__wrapper {
   width: 60%;
-  margin: 0;
 }
