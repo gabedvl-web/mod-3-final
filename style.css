@@ -5,12 +5,20 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+.title {
+  text-align: center;
+  
+}
 .nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+}
+
+img {
   width: 100%;
 }
 
@@ -57,7 +65,9 @@ LANDING
 
 header {
   display: flex;
+  margin: 0 250px 0 250px;
 }
+
 .header__content {
   display: flex;
   align-items: center;
@@ -71,4 +81,39 @@ header {
 
 .header__img--wrapper {
   width: 60%;
+}
+
+/*
+
+MAIN
+
+*/
+
+main {
+  margin: 0 250px 0 250px;
+}
+
+/*
+
+FEATURE
+
+*/
+
+.icon__img--wrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
 }
