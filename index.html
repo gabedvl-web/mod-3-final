@@ -142,9 +142,10 @@
               </section>
 
               <section class="title">
-                <figure>
-                  <img class="header__img--wrapper" src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="Hero Screenshot">
+                <figure class="img__wrapper">
+                  <img src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="Hero Screenshot">
                 </figure>
+                <div class="content__right">
                 <h2><span class="purple">QUALITY WORK</span></h2>
                 <h3>
                   Designed & Developed by <span class="purple">Professionals.</span>
@@ -155,32 +156,45 @@
                 <button type="button" class="button">
                   Learn More
                 </button>
+                </div>
               </section>
 
-              <section class="title">
+              <section id="steps" class="title">
+                <div class="container">
+                <div class="row">
                 <figure>
-                  <img class="header__img--wrapper" src="./assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="Hero Screenshot">
+                  <img class="header__img--wrapper-s" src="./assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="Hero Screenshot">
                 </figure>
                 <h2><span class="purple">STEPS</span></h2>
                 <h3>
                   Easy to <span class="purple">Get Started.</span>
                 </h3>
                 <ol class="steps">
-                  <div class="list_number">01</div>
-                  <li>Register
-                    <p>Create an account with us using Google or Facebook.</p>
+                   <li class="step">
+                    <span class="list_number">01</span>
+                    <div class="step__content">
+                      <h4>Register</h4>
+                      <p>Create an account with us using Google or Facebook.</p>
+                    </div>
                   </li>
-                  <div class="list_number">02</div>
-                  <li>Download
-                    <p>Browse and Download the template that you like from the marketplace.</p>
+                  <li class="step">
+                    <span class="list_number">02</span>
+                    <div class="step__content">
+                      <h4>Download</h4>
+                      <p>Browse and Download the template that you like from the marketplace.</p>
+                    </div>
                   </li>
-                  <div class="list_number">03</div>
-                  <li>Run
-                    <p>Follow the instructions to setup and customize the template to your needs.</p>
+                  <li class="step">
+                    <span class="list_number">03</span>
+                    <div class="step__content">
+                      <h4>Run</h4>
+                      <p>Follow the instructions to setup and customize the template to your needs.</p>
+                    </div>
                   </li>
                 </ol>
+                </div>
+                </div>
               </section>
-
               <section class="title">
                 <figure>
                   <img class="header__img--wrapper" src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="Prototype Illustration">
@@ -191,14 +205,18 @@
                 </h3>
                 <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum beatae illo enim repellat ipsam, esse nostrum architecto distinctio, possimus aperiam quibusdam, ex saepe placeat aliquid? Inventore accusantium facilis ducimus.
                 </p>
-                <ul>
-                  <li>Affordable
+                  <div class="img-bubble-a">
+                    <img class="header__img--wrapper" src="./assets/dollar-sign.svg" alt="Dollar Sign">
+                  </div>
+                    <h4>Affordable</h4>
                     <p>We promise to offer you the best rate we can - at par with the industry standard.</p>
-                  </li>
-                  <li>Professionalism
+                  <div class="img-bubble-p">
+                    <img class="header__img--wrapper" src="./assets/briefcase.svg" alt="Briefcase">
+                  </div>
+                  <div>
+                    <h4>Professionalism</h4>
+                  </div>
                     <p>We assure you that our templates are designed and created by professional designers.</p>
-                  </li>
-                </ul>
                 <button class="button">Learn More</button>
               </section>
 
@@ -209,6 +227,59 @@
                 </h3>
                 <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum beatae illo enim repellat ipsam, esse nostrum architecto distinctio, possimus aperiam quibusdam, ex saepe placeat aliquid? Inventore accusantium facilis ducimus.
                 </p>
+                
+                <div class="pricing__container">
+                  <div class="pricing__card personal">
+                    <h5>PERSONAL</h5>
+                    <h6>$17.99</h6>
+                    <p>MONTHLY</p>
+                     <div class="line"></div>
+                     <h5>For Individuals</h5>
+                    <ul>
+                      <li>30 Templates</li>
+                      <li>7 Landing Pages</li>
+                      <li>12 Internal Pages</li>
+                      <li>Basic Assistance</li>
+                    </ul>
+                     <div class="line"></div>
+                    <button class="button">BUY NOW</button>
+            
+                </div>
+                
+                  <div class="pricing__card business">
+                    <h5>BUSINESS</h5>
+                    <h6>$37.99</h6>
+                    <p>MONTHLY</p>
+                     <div class="line"></div>
+                     <h5>For Small Businesses</h5>
+                    <ul>
+                      <li>60 Templates</li>
+                      <li>15 Landing Pages</li>
+                      <li>22 Internal Pages</li>
+                      <li>Priority Assistance</li>
+                    </ul>
+                     <div class="line"></div>
+                    <button class="button">BUY NOW</button>
+              
+                </div>
+                
+                  <div class="pricing__card enterprise">
+                    <h5>ENTERPRISE</h5>
+                    <h6>$57.99</h6>
+                    <p>MONTHLY</p>
+                    <div class="line"></div>
+                    <h5>For Large Companies</h5>
+                    <ul>
+                      <li>90 Templates</li>
+                      <li>27 Landing Pages</li>
+                      <li>37 Internal Pages</li>
+                      <li>Personal Assistance</li>
+                    </ul>
+                     <div class="line"></div>
+                    <button class="button">BUY NOW</button>
+                  
+                </div>
+             
               </section>
 
               <section class="title">
@@ -220,14 +291,21 @@
                   Our Clients <span class="purple">Love Us.</span>
                 </h3>
                 <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum beatae illo enim repellat ipsam, esse nostrum architecto distinctio, possimus aperiam quibusdam, ex saepe placeat aliquid? Inventore accusantium facilis ducimus.</p>
-                <h3>
+                <div class="testimonial__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h7>
                   Amazing User Experience
-                </h3>
-                <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum beatae illo enim repellat ipsam, esse nostrum architecto distinctio, possimus aperiam quibusdam, ex saepe placeat aliquid? Inventore accusantium facilis ducimus.</p>
+                </h7>
+                <p class="AUE__para">lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum beatae illo enim repellat ipsam, esse nostrum architecto distinctio, possimus aperiam quibusdam, ex saepe placeat aliquid? Inventore accusantium facilis ducimus.</p>
                 <img class="profile__img" src="./assets/photo-1494790108377-be9c29b29330.avif" alt="Profile Image">
-                <h3>
+                <h7>
                   Charlotte Hale
-                </h3>
+                </h7>
                 <p>Director, Delos Inc.</p>
               </section>
               <section>
