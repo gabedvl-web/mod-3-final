@@ -27,8 +27,13 @@ p {
 }
 .title {
   text-align: center;
-  
 }
+
+.title__left {
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
 .nav__container {
   display: flex;
   justify-content: space-between;
@@ -227,16 +232,16 @@ li {
 
 li p {
   margin: 0;
-  width: 250px;
+  width: 300px;
   display: inline;
 }
 
 .list_number {
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 600;
   color: rgba(165, 166, 169, 0.442);
   line-height: 1;
-  margin: 14px 0 0 0;
+
 }
 
 li div {
@@ -271,23 +276,25 @@ li div {
 .step__content h4 {
   margin: 0;
   line-height: 1.2;
+  margin-left: -50px;
 }
 
 .step__content p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   max-width: 540px;
-  width: 50%;
+  width: 95%;
+  margin-left: -50px;
 }
  
 #steps img {
-  height: 400px;
+  height: 350px;
   width: 600px;
-  margin: 50px 10px 50px 20px;
+  margin: 0;
 }
 
 .header__img--wrapper-s {
-  width: 50%;
+  width: 45%;
 }
 
 /*
@@ -298,11 +305,12 @@ VALUES
 
 #values {
   display: flex;
+  text-align: left;
 }
 
 .img-bubble-a {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: lightgreen;
   display: flex;
@@ -312,8 +320,8 @@ VALUES
 }
 
 .img-bubble-p {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: salmon;
   display: flex;
@@ -328,6 +336,25 @@ VALUES
   object-fit: contain;
 }
 
+.img__right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 150px;
+}
+
+#values figure img {
+ width: 600px;
+}
+
+.principle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 /*
 
 PRICING
@@ -337,14 +364,16 @@ PRICING
 .pricing__container {
   line-height: 2.5;
   display: flex;
-  gap: 24px;
+  gap: 40px;
   align-items: stretch;
   justify-content: center;
+  margin: -100 !important;
+  padding: -100 !important; 
 }
 
 .pricing__card {
   display: flex;
-  width: 300px;
+  width: 1800px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
@@ -432,6 +461,19 @@ TESTIMONIALS
 
 */
 
+#test {
+  display: flex;
+  text-align: left;
+}
+
+.img__left {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  margin-right: 80px;
+}
 .testimonial__rating {
   color: gold
 }
@@ -449,4 +491,23 @@ h7 {
   border-radius: 50%;
   height: 80px;
   width: 80px;
+}
+
+.director__info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.director__info button {
+  padding: 10px;
+  border-radius: 50%;
+  color: rgb(89, 65, 227);
+  background-color: rgb(236, 233, 233);
+  font-size: 16px;
+  border-style: none;
+}
+
+.director__info h7 {
+  font-weight: bold;
 }
