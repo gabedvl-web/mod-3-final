@@ -2,7 +2,7 @@
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 44px;
   font-weight: 1000;
 }
 
@@ -23,10 +23,18 @@ h4 {
 
 p {
   color: grey;
-  font-weight: 420;
+  font-weight: 400;
+}
+
+.main__text {
+  font-weight: bold !important;
 }
 .title {
   text-align: center;
+}
+
+.title p {
+  margin: 30px 0;
 }
 
 .title__left {
@@ -74,7 +82,7 @@ img {
 }
 
 .button {
-  background-color: rgb(85, 5, 190);
+  background-color:  rgb(85, 5, 190);
   color: white;
   border: none;
   padding: 10px 30px;
@@ -119,6 +127,11 @@ header {
   width: 55%;
 }
 
+.OTC {
+  font-size: 12px;
+  color: rgb(184, 180, 180)
+}
+
 /*
 
 MAIN
@@ -126,7 +139,10 @@ MAIN
 */
 
 main {
-  margin: 0 250px 0 250px;
+  width 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
 }
 
 /*
@@ -363,12 +379,21 @@ PRICING
 
 .pricing__container {
   line-height: 2.5;
+  line-height: 2.5;
   display: flex;
-  gap: 32px;
   justify-content: space-between;
+  gap: 32px;
   width: 100%;
+  margin: 0 auto;
+}
+
+.pricing__description {
+  margin: 0 auto !important;
+  width: 600px;
   align-items: center;
-  max-width: 1200px;
+  justify-content: center;
+  padding: 24px 0 92px 0;
+  font-weight: bold;
 }
 
 .pricing__card {
@@ -517,4 +542,137 @@ h7 {
 
 .director__info h7 {
   font-weight: bold;
+}
+
+/*
+
+CONTACT
+
+*/
+
+#contact {
+  background-color: rgb(85, 5, 190);
+  padding: 50px;
+  margin: 50px 0 50px 0;
+  display: flex;
+  width: 100%;
+  display: flex;
+}
+
+.contact p {
+  color: white;
+  font-size: 30px;
+  flex-direction: row;
+  display: flex;
+  width: 50%;
+  text-align: left;
+  margin-left: 8px;
+}
+
+.contact__buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+.get__started {
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 20px 60px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 14px;
+}
+
+.contact__us {
+  color: white;
+  border: solid 1px;
+  border-color: whitesmoke;
+  padding: 20px 60px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 14px;
+  background-color:  rgb(85, 5, 190);
+}
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: rgb(85, 5, 190);
+  width: 100%;
+}
+
+#footer__line {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer__columns {
+  display: flex;
+  gap: 200px;
+  margin-bottom: 80px;
+  justify-content: center;
+}
+
+.footer__column li {
+list-style: none;
+color: white;
+padding: 8px;
+justify-content: center;
+}
+
+.footer__title {
+  color: white;
+  font-weight: 700;
+  padding: 75px 0 25px 0;
+}
+
+.footer__lower {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 180px 0 180px;
+  padding: 50px 0 70px 0;
+}
+
+.footer__brand {
+  display: flex;
+}
+.footer__logo {
+  width: 40px;
+}
+
+.footer__logo--text{
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 10px;
+}
+
+.social {
+  border-radius: 60%;
+  background-color: white;
+  display: flex;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.socials {
+  display: flex;
+  gap: 8px;
+}
+
+/* 
+
+MEDIA QUERIES
+
+*/
+
+@media (max-width: 768px) {
+.nav__link {
+  display: none;
 }
