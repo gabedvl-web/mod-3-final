@@ -132,7 +132,7 @@ img {
 }
 
 .menu__backdrop {
-  position: absolute;
+  position: fixed;
   background-color: #242424;
   top: 0;
   left: 0;
@@ -883,7 +883,6 @@ MEDIA QUERIES
     width: 100%;
   }
 
-  /* Stack Features */
   .services {
     flex-direction: column;
     gap: 28px;
@@ -893,7 +892,6 @@ MEDIA QUERIES
     width: 100%;
   }
 
-  /* Stack Values principles */
   .principles {
     flex-direction: column;
     gap: 24px;
@@ -957,6 +955,139 @@ MEDIA QUERIES
   .footer__columns {
     gap: 32px;
     margin-left: 32px;
+  }
+
+  .footer__lower {
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__container {
+    position: relative;
+    width: 90%;
+    padding: 20px 0;
+  }
+
+  .nav__img {
+    padding: 0;
+  }
+
+  .nav__button {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 10;
+    width: 220px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__links.open {
+    display: flex;
+  }
+
+  header,
+  #quality,
+  #steps,
+  #values,
+  #test,
+  #contact {
+    flex-direction: column;
+  }
+
+  .header__content,
+  .content__right,
+  .content__left,
+  .img__right,
+  .img__left,
+  .img__wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .header__img--wrapper,
+  .header__img--wrapper-s,
+  .companies__img,
+  #steps img,
+  #values figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  .services {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .principles {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .principle {
+    width: 100%;
+  }
+
+  .pricing__container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .pricing__card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .pricing__description {
+    width: 100%;
+  }
+
+  .step__content h4,
+  .step__content p {
+    margin-left: 0;
+  }
+
+  .contact p {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact__buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .get__started,
+  .contact__us {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .footer__columns {
+    gap: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 
   .footer__lower {
