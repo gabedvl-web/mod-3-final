@@ -6,6 +6,7 @@
   <title>mod-3-final</title>
   <link rel="stylesheet" href="style.css">
    <script src="https://kit.fontawesome.com/52b5492d5f.js" crossorigin="anonymous"></script>
+   <script src="index.js"></script>
 </head>
 <body>
   <section id="landing">
@@ -20,9 +21,24 @@
           <li><a href="#contact" class="nav__link">Contact Us</a></li>
           <li><a href="#login" class="nav__link">Login</a></li>
         </ul>
-        <button type="button" class="button">
+        <button type="button" class="nav__button">
           Sign Up
+        </button> 
+       <button class="nav__toggle" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
         </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li><a href="#about" class="menu__link">About</a></li>
+            <li><a href="#blog" class="menu__link">Blog</a></li>
+            <li><a href="#pricing" class="menu__link">Pricing</a></li>
+            <li><a href="#contact" class="menu__link">Contact Us</a></li>
+            <li><a href="#login" class="menu__link">Login</a></li>
+          </ul>
+        </div>
       </div>
       </nav>
 
@@ -34,9 +50,12 @@
               <p class="main__text">
                 Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
               </p>
-              <button type="button" class="button">
-                Get Started
-              </button>
+              <div class="header__email">
+                <input type="email" class="header__email--input" placeholder="Your E-mail Address">
+                <button type="button" class="header__email--btn">
+                  Get Started
+                </button>
+              </div>
               <h3 class="OTC">
                 OUR TRUSTED CUSTOMERS
               </h3>
@@ -202,24 +221,30 @@
                 </h3>
                 <p class="main__text">lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rerum beatae illo enim repellat ipsam, esse nostrum architecto distinctio, possimus aperiam quibusdam, ex saepe placeat aliquid? Inventore accusantium facilis ducimus.
                 </p> 
-                <div class="principle">
-                  <div class="img-bubble-a">
-                    <img class="header__img--wrapper" src="./assets/dollar-sign.svg" alt="Dollar Sign">
-                  </div>
-                
-                    <h4>Affordable</h4>
-                    </div>
-                    <p>We promise to offer you the best rate we can - at par with the industry standard.</p>
-                    <div class="principle">
-                  <div class="img-bubble-p">
-                    <img class="header__img--wrapper" src="./assets/briefcase.svg" alt="Briefcase">
-                  </div>
-                    <h4>Professionalism</h4>
-                  </div>
-                    <p>We assure you that our templates are designed and created by professional designers.</p>
-                     <button class="button">Learn More</button>
+               <div class="principles">
+            <div class="principle">
+              <div class="principle-heading">
+                <div class="img-bubble-a">
+                  <img class="header__img--wrapper" src="./assets/dollar-sign.svg" alt="Dollar Sign">
                 </div>
+                <h4>Affordable</h4>
+              </div>
+              <p>We promise to offer you the best rate we can - at par with the industry standard.</p>
+            </div>
+
+            <div class="principle">
+              <div class="principle-heading">
+                <div class="img-bubble-p">
+                  <img class="header__img--wrapper" src="./assets/briefcase.svg" alt="Briefcase">
+                </div>
+                <h4>Professionalism</h4>
+              </div>
+              <p>We assure you that our templates are designed and created by professional designers.</p>
+            </div>
+          </div>
                 
+                 <button class="button">Learn More</button>
+                </div>
                  <figure>
                   <img class="img__right" src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="Prototype Illustration">
                 </figure>
@@ -416,10 +441,7 @@
         <i class="fa-brands fa-youtube"></i>
       </div>
     </div>
-
-
-    </div>
-
+  </div>
   </footer>
           
 </body>
